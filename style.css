@@ -3,12 +3,25 @@
     margin: 0;
 }
 body{
-    background-color: rgb(26, 26, 26);
-    background-repeat: no-repeat;
-    background-size: contain;
+  
     font-family: Arial;
-}
+    background: linear-gradient(45deg, #1b2223, #1b2223 , #086e5c, #1b1b1b, #1b1b1b );
+    background-size: 300% 300%;
 
+    animation: colors 10s ease infinite;
+}
+@keyframes colors {
+    0%{
+        background-position: 0 0;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 0;
+    }
+    
+}
 a{
     border: 1px solid rgb(8, 184, 184);
     color: rgb(8, 184, 184);
@@ -39,7 +52,7 @@ a:active{
 .main{
   
     max-width: 300px;
-    height: 600px;
+    height: auto;
     margin: auto;
 
 
@@ -56,6 +69,7 @@ a:active{
     
     border: 1px solid rgb(8, 184, 184);
     border-radius: 50%;
+    margin-top: 10px;
     margin-bottom: 20px;
     
     box-shadow: 10px 10px 10px  rgba(0, 0, 0, 0.603);
@@ -65,13 +79,13 @@ a:active{
 
 
 footer{
-    background-color: rgba(0, 0, 0, 0.637);
+    background-color: #1a1a1a;
     color: rgb(153, 153, 153);
     text-align: center;
-    
-    width: 100%;
+
     position: absolute;
-    bottom: 0px;
+    width: 100%;
+    bottom: 0;
 }
 
 footer img{
