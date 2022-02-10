@@ -5,17 +5,20 @@
 body{
   
     font-family: Arial;
-    background: linear-gradient(45deg, #1b2223, #1b2223 , #086e5c, #1b1b1b, #1b1b1b );
-    background-size: 300% 300%;
+    background: url(backgroundblur2.png);
+    background-color: #1b2223;
 
-    animation: colors 10s ease infinite;
+    animation: colors 16s ease infinite;
 }
 @keyframes colors {
     0%{
         background-position: 0 0;
     }
     50%{
-        background-position: 100% 50%;
+        background-position: 100% 100%;
+    }
+    75%{
+        background-position: 10% 76%;
     }
     100%{
         background-position: 0 0;
